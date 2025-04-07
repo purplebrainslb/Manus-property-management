@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { formatCurrency } from '@/lib/utils';
-import { Building, Users, DollarSign, FileText, Bell, TicketCheck } from 'lucide-react';
+import { Building, Users, DollarSign, FileText, Bell, Ticket } from 'lucide-react';
 import Link from 'next/link';
 
 type Property = {
@@ -193,7 +193,7 @@ export function PropertyDetails() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Open Tickets</CardTitle>
-            <TicketCheck className="h-4 w-4 text-muted-foreground" />
+            <Ticket className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{stats.openTickets}</div>
@@ -216,7 +216,7 @@ export function PropertyDetails() {
             <Bell className="mr-2 h-4 w-4" /> Announcements
           </TabsTrigger>
           <TabsTrigger value="tickets">
-            <TicketCheck className="mr-2 h-4 w-4" /> Tickets
+            <Ticket className="mr-2 h-4 w-4" /> Tickets
           </TabsTrigger>
         </TabsList>
         
