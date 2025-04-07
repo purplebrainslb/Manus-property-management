@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { supabase } from '@/lib/supabase/client';
 import { useAuth } from '@/lib/auth/auth-context';
 import Link from 'next/link';
-import { Building, Users, DollarSign, TicketCheck } from 'lucide-react';
+import { Building, Users, DollarSign, Ticket } from 'lucide-react';
 
 export function DashboardOverview() {
   const { user } = useAuth();
