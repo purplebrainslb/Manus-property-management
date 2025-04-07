@@ -2,19 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost', 'your-supabase-project.supabase.co'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '*.supabase.co',
-        port: '',
-        pathname: '/storage/v1/object/public/**',
-      },
-    ],
+    domains: ['localhost'],
   },
   experimental: {
-    serverActions: true,
-  },
+    // Remove serverActions: true if it exists
+  }
 };
 
 module.exports = nextConfig;
