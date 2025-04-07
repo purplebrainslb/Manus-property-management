@@ -9,7 +9,7 @@ import {
   FileText, 
   Calendar, 
   Bell, 
-  TicketCheck, 
+  Ticket, 
   FileUp, 
   LogOut,
   Home
@@ -100,7 +100,7 @@ export function DashboardSidebar() {
         
         <SidebarLink 
           href="/dashboard/tickets" 
-          icon={<TicketCheck className="h-4 w-4" />}
+          icon={<Ticket className="h-4 w-4" />}
           active={pathname.startsWith('/dashboard/tickets')}
         >
           Tickets
