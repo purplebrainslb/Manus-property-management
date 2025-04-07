@@ -135,7 +135,7 @@ export function DashboardOverview() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Open Tickets</CardTitle>
-            <TicketCheck className="h-4 w-4 text-muted-foreground" />
+            <Ticket className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{loading ? '...' : stats.openTickets}</div>
@@ -164,7 +164,7 @@ export function DashboardOverview() {
         
         <Link href="/dashboard/meetings/schedule">
           <Button className="w-full" variant="outline">
-            <TicketCheck className="mr-2 h-4 w-4" /> Schedule Meeting
+            <Ticket className="mr-2 h-4 w-4" /> Schedule Meeting
           </Button>
         </Link>
       </div>
